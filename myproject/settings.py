@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-2evi-@16kiypyci=+)d&f=57b33wtr0+q38rkj(^cxh1mcolpg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
-
+DATABASE_URL = "PGPASSWORD=OIpO6CIhUIo7ZBkKw8oS psql -h containers-us-west-167.railway.app -U postgres -p 7964 -d railway"
 # Application definition
 
 INSTALLED_APPS = [
@@ -119,6 +119,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS  = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
