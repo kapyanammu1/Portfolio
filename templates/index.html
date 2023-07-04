@@ -261,21 +261,34 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          {% for p in project %}
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <a href="https://restoapp-production.up.railway.app/"><img src="{% static 'assets/img/yanica_logo.jpg' %}" class="img-fluid" alt=""></a>
+              <a href="https://restoapp-production.up.railway.app/"><img src="{% static 'assets/img/yanica_logo.jpg' %}" class="img-fluid fixed-size" alt=""></a>
               <div class="portfolio-info">
                 <h4>Yanica's Foodhouse</h4>
-                <h5><span><em>Simple website using django, html, css</em></span></h5>
+                <h5><span><em>Simple website</em></span></h5>
                 <div class="portfolio-links">
                   <a href="https://restoapp-production.up.railway.app/" target="_blank" rel="noopener noreferrer"><i class="bx bx-plus"></i></a>
                   <!-- <a href="https://restoapp-production.up.railway.app/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
-            </div>
+            </div>               
           </div>
-          {% endfor %}
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <a href="#"><img src="{% static 'assets/img/POS_pic.png' %}" class="img-fluid fixed-size" alt=""></a>
+              <div class="portfolio-info">
+                <h4>Yanica's Foodhouse</h4>
+                <h5><span><em>Point of sale system</em></span></h5>
+                <div class="portfolio-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="https://restoapp-production.up.railway.app/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>               
+          </div>
         </div>
       </div>
     </section><!-- End Portfolio Section -->
